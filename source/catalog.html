@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи (каталог)</title>
+  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a href="#" class="main-header__logo logo">
+    <a href="index.html" class="main-header__logo logo">
       <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
       <img class="logo__image" src="img/logo-tablet.svg" width="174" height="50" alt="Cat Energy">
       <img class="logo__image" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy">
@@ -45,7 +48,6 @@
   </header>
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
-
     <section class="catalog container">
       <ul class="catalog__list">
         <li class="catalog__item product">
@@ -385,14 +387,14 @@
       </ul>
     </section>
 
-    <section class="gift container">
+    <div class="gift container">
       <!-- <svg class="gift__img" width="60" height="65" viewBox="0 0 55.5 60"
           role="img" aria-label="выбирай подарок" focusable="false">
           <use xlink:href="img/sprite.svg#icon-gift"></use>
         </svg> -->
       <img class="gift__img" src="img/icon-gift.svg" width="128" height="24" alt="выбирай подарок">
       <p class="gift__slogan">Закажите все <br>и получите чехол для кота в подарок!</p>
-    </section>
+    </div>
 
   </main>
   <footer class="main-footer">
