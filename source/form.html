@@ -3,21 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи (форма)</title>
+  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a href="#" class="main-header__logo logo">
-      <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
-      <img class="logo__image" src="img/logo-tablet.svg" width="174" height="50" alt="Cat Energy">
-      <img class="logo__image" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy">
-      <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
+    <a class="main-header__logo logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть
@@ -51,7 +56,7 @@
       <form class="programs__form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Краткая анкета</h2>
         <div class="programs__about">
-          <fieldset class="programs__cat">
+          <div class="programs__cat">
             <div class="programs__line label-input">
               <label for="cat-name">имя:*</label>
               <input id="cat-name" type="text" name="cat-name" value="Барсик" required>
@@ -64,7 +69,7 @@
               <label for="cat-years">возраст (лет):</label>
               <input id="cat-years" type="text" name="cat-years" value="7" required>
             </div>
-          </fieldset>
+          </div>
 
           <ul class="programs__buttons radio-buttons">
             <li class="radio-buttons__item">
@@ -84,29 +89,29 @@
             </li>
           </ul>
         </div>
-        <fieldset class="programs__owner owner">
+        <div class="programs__owner owner">
           <h2 class="owner__header">Контактные данные (владельца кота)</h2>
           <div class="owner__wrapper">
             <div class="owner__line label-input label-input--mail">
-              <label for="owner__email">e-mail:*</label>
-              <input class="owner__email" id="owner__email" type="email" name="owner__email" value="kuklachev@gmail.com"
+              <label for="owner-email">e-mail:*</label>
+              <input class="owner__email" id="owner-email" type="email" name="owner__email" value="kuklachev@gmail.com"
                 required>
             </div>
             <div class="owner__line label-input label-input--phone">
-              <label for="owner__phone">телефон:*</label>
-              <input class="owner__phone" id="owner__phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
+              <label for="owner-phone">телефон:*</label>
+              <input class="owner__phone" id="owner-phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
                 required>
             </div>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="programs__comments comments">
+        <div class="programs__comments comments">
           <h2 class="comments__header">Комментарий:</h2>
           <textarea class="comments__text" id="comments" name="comments" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
+        </div>
 
-        <fieldset class="programs__append append">
+        <div class="programs__append append">
           <h2 class="append__header">Дополнительно</h2>
           <ul class="append__list">
             <li class="append__item">
@@ -126,7 +131,7 @@
               <label class="append__label" for="vitamin">витамины</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="programs__button">
           <button class="button button--submit" type="submit">отправить заявку</button>
           <p class="programs__hint">* — Обязательные поля</p>
@@ -148,42 +153,36 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
           allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
-      <!-- мой вариант -->
       <div class="main-footer__down">
-        <div class="logo logo--footer">
-          <a class="logo__link" href="#">
-            <img class="logo__text" src="img/logo-text.svg" width="128" height="24" alt="">
+        <div class="logo-footer">
+          <a class="logo-footer__link" href="#" aria-label="На главную">
+            <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-        <!--
-          <a class="main-footer__logo logo" href="#">
-            <img class="logo__img logo__img--text" src="img/logo-text-mobile.svg" width="128" height="24" alt="">
-          </a>
-         -->
 
         <ul class="socials">
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-vk.svg" width="128" height="24" alt="вконтакте">
+              <img class="social-icon__img" src="images/icon-vk.svg" width="128" height="24" alt="вконтакте">
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="youtube">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-youtube.svg" width="128" height="24" alt="">
+              <img class="social-icon__img" src="images/icon-youtube.svg" width="128" height="24" alt="">
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="images/sprite.svg#icon-telegram"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-telegram.svg" width="128" height="24" alt="">
+              <img class="social-icon__img" src="images/icon-telegram.svg" width="128" height="24" alt="">
             </a>
           </li>
         </ul>
@@ -193,7 +192,7 @@
             <!-- <svg class="copyright__icon" width="27" height="34" viewBox="0 0 60 60" role="img">
             <use xlink:href="#academy"></use>
           </svg> -->
-            <img class="copyright__img" src="img/htmlacademy.svg" width="128" height="24" alt="">
+            <img class="copyright__img" src="images/htmlacademy.svg" width="128" height="24" alt="">
           </a>
         </div>
       </div>

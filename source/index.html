@@ -3,21 +3,26 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+  <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи</title>
+  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
 
   <header class="main-header">
-    <a href="#" class="main-header__logo logo">
-      <img class="logo__image" src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
-      <img class="logo__image" src="img/logo-tablet.svg" width="174" height="50" alt="Cat Energy">
-      <img class="logo__image" src="img/logo-desktop.svg" width="202" height="59" alt="Cat Energy">
-      <img class="logo__text" src="img/logo-text.svg" width="101" height="18" alt="Cat Energy">
+    <a class="logo main-header__logo" href="#">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть
@@ -45,24 +50,28 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">cat energy</h1>
-    <section class="under"
+    <div class="under">
+      <div class="under__white"></div>
+      <div class="under__green"></div>
+      <!-- <section class="under"
       style="position: absolute; width: 100%; height: 302px; display: flex; z-index: -1; top: 65px;">
       <div class="under__white" style="width: 50%;"></div>
-      <div class="under__green" style="width: 50%; background-color: green;"></div>
-    </section>
+      <div class="under__green" style="width: 50%; background-color: green;"></div> -->
+    </div>
 
     <section class="promo">
       <div class="container container--promo">
         <h2 class="promo__header">Функциональное питание для котов</h2>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x"> -->
-          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.png 1x, img/index-can-tablet@2x.png 2x">
-          <img class="promo__glass" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
-            width="280" height="271" alt="Стакан">
+          <!--
+          <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x"> -->
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <img class="promo__glass" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x"
+            width="280" height="270" alt="Стакан">
         </picture>
         <a class="promo__programm" href="form.html">
           подобрать программу
@@ -139,22 +148,19 @@
         </div>
         <div class="advertise__item advertise-slider">
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x"> -->
-            <!-- <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x"> -->
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="advertise-slider__before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
-              width="311" height="232" alt="Жирный кот">
+            <!--
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/before-tablet@1x.webp 1x, images/before-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/before-mobile@1x.webp 1x, images/before-mobile@2x.webp 2x"> -->
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
+            <img class="advertise-slider__before" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x"
+              width="280" height="256" alt="Жирный кот">
           </picture>
           <picture>
-            <!-- <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x"> -->
-            <!-- НЕТ IMG<source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x"> -->
-            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-            <img class="advertise-slider__after visually-hidden" src="img/after-mobile@1x.png"
-              srcset="img/after-mobile@2x.png 2x" width="251" height="240" alt="Тощий кот">
+            <!--
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/after-tablet@1x.webp 1x, images/after-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x"> -->
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
+            <img class="advertise-slider__after visually-hidden" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Тощий кот">
           </picture>
         </div>
       </div>
@@ -174,42 +180,36 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
           allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
-      <!-- мой вариант -->
+
       <div class="main-footer__down">
-        <div class="logo logo--footer">
-          <a class="logo__link" href="#">
-            <img class="logo__text" src="img/logo-text.svg" width="128" height="24" alt="">
+        <div class="logo-footer">
+          <a class="logo-footer__link" href="#" aria-label="На главную">
+            <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-        <!--
-          <a class="main-footer__logo logo" href="#">
-            <img class="logo__img logo__img--text" src="img/logo-text-mobile.svg" width="128" height="24" alt="">
-          </a>
-         -->
-
         <ul class="socials">
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="images/sprite.svg#icon-vk"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-vk.svg" width="128" height="24" alt="вконтакте">
+              <img class="social-icon__img" src="images/icon-vk.svg" width="128" height="24" alt="вконтакте">
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="youtube">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                <use xlink:href="images/sprite.svg#icon-youtube"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-youtube.svg" width="128" height="24" alt="">
+              <img class="social-icon__img" src="images/icon-youtube.svg" width="128" height="24" alt="">
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
               <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <use xlink:href="images/sprite.svg#icon-telegram"></use>
               </svg> -->
-              <img class="social-icon__img" src="img/icon-telegram.svg" width="128" height="24" alt="">
+              <img class="social-icon__img" src="images/icon-telegram.svg" width="128" height="24" alt="">
             </a>
           </li>
         </ul>
@@ -219,7 +219,7 @@
             <!-- <svg class="copyright__icon" width="27" height="34" viewBox="0 0 60 60" role="img">
             <use xlink:href="#academy"></use>
           </svg> -->
-            <img class="copyright__img" src="img/htmlacademy.svg" width="128" height="24" alt="">
+            <img class="copyright__img" src="images/htmlacademy.svg" width="128" height="24" alt="">
           </a>
         </div>
       </div>
