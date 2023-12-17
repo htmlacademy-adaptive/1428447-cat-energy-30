@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  background-color: $basic_green;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
