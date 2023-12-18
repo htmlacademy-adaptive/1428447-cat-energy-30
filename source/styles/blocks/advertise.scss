@@ -1,0 +1,13 @@
+.advertise {
+  background-color: $grey-3;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.advertise__header {}
+
+.advertise__wrapper {}
+
+.advertise__item {}
