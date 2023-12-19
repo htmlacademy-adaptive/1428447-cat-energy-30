@@ -1,0 +1,15 @@
+.radio-buttons {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+
+  & li {
+    list-style: none;
+  }
+}
+
+.radio-buttons__item {}
+
+.radio-buttons__input {}
+
+.radio-buttons__label {}

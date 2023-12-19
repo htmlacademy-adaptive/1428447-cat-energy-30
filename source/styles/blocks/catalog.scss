@@ -1,0 +1,21 @@
+.catalog {
+  & ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & a {
+    // text-decoration: none;
+    // color: $special_dark-grey-2;
+  }
+}
+
+.catalog__list {
+}
+
+.catalog__item {
+}

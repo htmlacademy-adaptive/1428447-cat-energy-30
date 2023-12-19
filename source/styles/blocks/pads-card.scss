@@ -1,0 +1,30 @@
+.pads-card {
+  color: $special_dark-grey;
+  font-family: $font-add;
+  font-size: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.pads-card__title {
+  color: $special_dark-grey-2;
+  text-transform: uppercase;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.pads-card__unit {}
+
+.pads-card__price {}
+
+.pads-card__button {}
