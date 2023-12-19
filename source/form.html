@@ -9,8 +9,7 @@
   <link rel="apple-touch-icon" href="favicons/apple.png"><!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Кэт энерджи (форма)</title>
-  <!-- <link href="css/style.min.css" rel="stylesheet"> -->
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
@@ -50,11 +49,13 @@
   </header>
   <main class="main-container">
     <h1 class="main-container__title">Подбор программы</h1>
+    <h2 class="main-container__subtitle">Заполните анкету, и мы подберем
+      программу питания для вашего кота</h2>
 
     <section class="programs container">
 
       <form class="programs__form" action="https://echo.htmlacademy.ru" method="post">
-        <h2 class="visually-hidden">Краткая анкета</h2>
+        <h3 class="visually-hidden">Краткая анкета</h3>
         <div class="programs__about">
           <div class="programs__cat">
             <div class="programs__line label-input">
@@ -90,7 +91,7 @@
           </ul>
         </div>
         <div class="programs__owner owner">
-          <h2 class="owner__header">Контактные данные (владельца кота)</h2>
+          <h3 class="owner__header">Контактные данные (владельца кота)</h3>
           <div class="owner__wrapper">
             <div class="owner__line label-input label-input--mail">
               <label for="owner-email">e-mail:*</label>
@@ -106,13 +107,13 @@
         </div>
 
         <div class="programs__comments comments">
-          <h2 class="comments__header">Комментарий:</h2>
+          <h3 class="comments__header">Комментарий:</h3>
           <textarea class="comments__text" id="comments" name="comments" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
         <div class="programs__append append">
-          <h2 class="append__header">Дополнительно</h2>
+          <h3 class="append__header">Дополнительно</h3>
           <ul class="append__list">
             <li class="append__item">
               <input class="append__input visually-hidden" id="false-sugar" type="checkbox" name="false-sugar" checked>

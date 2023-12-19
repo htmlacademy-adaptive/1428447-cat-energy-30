@@ -39,8 +39,13 @@ $green-4: #9ecc82;
 //$grey-11: #dcdcdc;
 
 
-// цвет тени в mixin.scss
+// цвет тени в mixins.scss
 $grey-shadow: #c4c4c4;
+
+// Основной и дополнительный фонт
+$font-main: "Oswald", serif;
+$font-add: "Lato", serif;
+
 
 // Реальные брейкпойнты
 $tablet-width: 768px;

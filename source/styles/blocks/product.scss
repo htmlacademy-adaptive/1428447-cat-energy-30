@@ -1,0 +1,49 @@
+// .product {}
+
+// .product__wrapper {}
+
+// .product__img {}
+
+// .product__picture {}
+
+// .product__card {
+
+// }
+
+.product__name {
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.product__features {
+  color: $special_dark-grey;
+  font-family: $font-add;
+  font-size: 12px;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+// .product__feature {}
+
+// .product__feature-name {}
+
+// .product__feature-value {}
+
+// .product__order {}
