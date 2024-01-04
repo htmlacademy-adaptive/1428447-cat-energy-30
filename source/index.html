@@ -84,6 +84,10 @@
     <section class="programs container">
       <h2 class="visually-hidden">рекомендуемые программы</h2>
       <div class="card">
+        <svg class="card__cat" width="36" height="50" aria-hidden="true" focusable="false" fill="black">
+          <use href="images/icons/stack.svg#icon-cat-slim"></use>
+        </svg>
+
         <h3 class="card__header">
           Похудение
         </h3>
@@ -96,6 +100,10 @@
         </a>
       </div>
       <div class="card card--slim">
+        <svg class="card__cat" width="67" height="28" aria-hidden="true" focusable="false" fill="black">
+          <use href="images/icons/stack.svg#icon-cat-pro"></use>
+        </svg>
+
         <h3 class="card__header">
           Набор массы
         </h3>
@@ -112,16 +120,36 @@
     <section class="special container">
       <h2 class="special__header">Как это работает</h2>
       <ul class="special__list">
-        <li class="special-card special-card--leaf">
+        <li class="special-card">
+          <div class="special-card__svg">
+            <svg class="special-card__image special-card__image--leaf" aria-hidden="true" width="25" height="28" focusable="false">
+              <use href="images/icons/stack.svg#icon-leaf"></use>
+            </svg>
+          </div>
           Функциональное питание содержит только полезные питательные вещества.
         </li>
-        <li class="special-card special-card--powder">
+        <li class="special-card">
+          <div class="special-card__svg">
+            <svg class="special-card__image special-card__image--powder" aria-hidden="true" width="26" height="27" focusable="false">
+              <use href="images/icons/stack.svg#icon-powder"></use>
+            </svg>
+          </div>
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </li>
-        <li class="special-card special-card--dining">
+        <li class="special-card">
+          <div class="special-card__svg">
+            <svg class="special-card__image special-card__image--eat" aria-hidden="true" width="25" height="30" focusable="false">
+              <use href="images/icons/stack.svg#icon-eat"></use>
+            </svg>
+          </div>
           Замените один-два приема обычной еды на наше функциональное питание.
         </li>
-        <li class="special-card special-card--clock">
+        <li class="special-card">
+          <div class="special-card__svg">
+            <svg class="special-card__image special-card__image--clock" aria-hidden="true" width="26" height="31" focusable="false">
+              <use href="images/icons/stack.svg#icon-clock"></use>
+            </svg>
+          </div>
           Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
         </li>
       </ul>
@@ -164,9 +192,15 @@
             <source width="280" height="256" type="image/webp" srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x"> -->
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
-            <img class="advertise-slider__after" src="images/after-mobile@1x.png"
-              srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Тощий кот">
+            <img class="advertise-slider__after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x"
+              width="280" height="256" alt="Тощий кот">
           </picture>
+          <button class="advertise-slider__range" type="button">
+            <svg width="50" height="50" aria-hidden="true" focusable="false">
+              <use href="images/icon-vk.svg"></use>
+            </svg>
+            <span class="visually-hidden">Ползунок слайдера</span>
+          </button>
         </div>
       </div>
     </section>
@@ -185,7 +219,6 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
           allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
-
       <div class="main-footer__down">
         <div class="logo-footer">
           <a class="logo-footer__link" href="#" aria-label="На главную">
@@ -195,36 +228,32 @@
         <ul class="socials">
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-vk"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-vk.svg" width="128" height="24" alt="вконтакте">
+              <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
+                <use href="images/icons/stack.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="youtube">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-youtube"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-youtube.svg" width="128" height="24" alt="">
+              <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
+                <use href="images/icons/stack.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-telegram"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-telegram.svg" width="128" height="24" alt="">
+            <a class="social-icon__link" href="#" aria-label="телеграм">
+              <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
+                <use href="images/icons/stack.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>
-            <!-- <svg class="copyright__icon" width="27" height="34" viewBox="0 0 60 60" role="img">
-            <use xlink:href="#academy"></use>
-          </svg> -->
-            <img class="copyright__img" src="images/htmlacademy.svg" width="128" height="24" alt="">
+            <svg class="copyright__icon" aria-hidden="true" width="27" height="34">
+              <use href="images/icons/stack.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

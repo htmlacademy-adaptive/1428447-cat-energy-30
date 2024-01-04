@@ -16,6 +16,31 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $basic_green;
+  }
+
+  // &::after {
+  //   content: "";
+  //   display: block;
+  //   width: 50px;
+  //   height: 50px;
+  //   background-color: $black;
+  //   background-image: url("../../images/stack.svg#icon-cat-slim");
+  //   background-size: 50px 50px;
+  //   background-repeat: no-repeat;
+  //   z-index: 1;
+  // }
+}
+
+.card__cat {
+  position: absolute;
 }
 
 .card__text {
@@ -30,14 +55,54 @@
 }
 
 .card__decision {
+  position: relative;
+  padding-right: 60px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#icon-pointer");
+    background-position: -8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    background-position: 0;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 // .card--slim {}
+// .card__svg {
+//   display: block;
+//   background-color: #000000;
+//   background-image: url("../../images/icons/stack.svg#icon-pointer");
+//   background-position: -8px;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+//   width: 40px;
+//   height: 40px;
+//   top: 0;
+//   right: 0;
+//   transition: 0.3s ease-in-out;
+// }

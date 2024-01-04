@@ -17,7 +17,8 @@
   <header class="main-header">
     <a class="main-header__logo logo" href="index.html">
       <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+          srcset="images/logo-desktop.svg">
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
         <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
       </picture>
@@ -90,30 +91,36 @@
             </li>
           </ul>
         </div>
-        <div class="programs__owner owner">
-          <h3 class="owner__header">Контактные данные (владельца кота)</h3>
+        <div class="programs__owner owner ">
+          <div class="delimiter">
+            <h3 class="owner__header">Контактные данные (владельца кота)</h3>
+          </div>
           <div class="owner__wrapper">
-            <div class="owner__line label-input label-input--mail">
+            <div class="owner__line owner__line--email">
               <label for="owner-email">e-mail:*</label>
-              <input class="owner__email" id="owner-email" type="email" name="owner__email" value="kuklachev@gmail.com"
+              <input class="owner__input" id="owner-email" type="email" name="owner__email" value="kuklachev@gmail.com"
                 required>
             </div>
-            <div class="owner__line label-input label-input--phone">
+            <div class="owner__line owner__line--phone">
               <label for="owner-phone">телефон:*</label>
-              <input class="owner__phone" id="owner-phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
+              <input class="owner__input" id="owner-phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
                 required>
             </div>
           </div>
         </div>
 
         <div class="programs__comments comments">
-          <h3 class="comments__header">Комментарий:</h3>
+          <div class="delimiter">
+            <h3 class="comments__header">Комментарий:</h3>
+          </div>
           <textarea class="comments__text" id="comments" name="comments" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
         <div class="programs__append append">
-          <h3 class="append__header">Дополнительно</h3>
+          <div class="delimiter">
+            <h3 class="append__header">Дополнительно</h3>
+          </div>
           <ul class="append__list">
             <li class="append__item">
               <input class="append__input visually-hidden" id="false-sugar" type="checkbox" name="false-sugar" checked>
@@ -160,49 +167,40 @@
             <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-
         <ul class="socials">
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-vk"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-vk.svg" width="128" height="24" alt="вконтакте">
+              <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
+                <use href="images/icons/stack.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item social-icon">
             <a class="social-icon__link" href="#" aria-label="youtube">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-youtube"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-youtube.svg" width="128" height="24" alt="">
+              <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
+                <use href="images/icons/stack.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <!-- <svg class="social-icon__img" width="23" height="16" viewBox="0 0 22 12">
-                <use xlink:href="images/sprite.svg#icon-telegram"></use>
-              </svg> -->
-              <img class="social-icon__img" src="images/icon-telegram.svg" width="128" height="24" alt="">
+            <a class="social-icon__link" href="#" aria-label="телеграм">
+              <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
+                <use href="images/icons/stack.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
         </ul>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>
-            <!-- <svg class="copyright__icon" width="27" height="34" viewBox="0 0 60 60" role="img">
-            <use xlink:href="#academy"></use>
-          </svg> -->
-            <img class="copyright__img" src="images/htmlacademy.svg" width="128" height="24" alt="">
+            <svg class="copyright__icon" aria-hidden="true" width="27" height="34">
+              <use href="images/icons/stack.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </footer>
-
-  <!-- <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p> -->
-
 </body>
 
 </html>
