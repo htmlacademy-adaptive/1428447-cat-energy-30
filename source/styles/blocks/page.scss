@@ -1,7 +1,11 @@
 .page {
-  margin: 1px;
+  height: 100%;
+  font-family: $font-main;
+  font-size: 18px;
+  line-height: 24px;
 }
 
-// .page__body {
-
-// }
+.page__body {
+  min-height: 100%;
+  margin: 0;
+}
