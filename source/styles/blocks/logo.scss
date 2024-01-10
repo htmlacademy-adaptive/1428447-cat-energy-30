@@ -1,7 +1,13 @@
-.logo {
-  margin: 1px;
-}
+// .logo {}
 
-// .logo__image {}
+.logo__image {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
 
 // .logo__text {}

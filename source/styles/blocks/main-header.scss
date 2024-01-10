@@ -1,5 +1,32 @@
 .main-header {
-  margin: 1px;
+  margin-top: 13px;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    // margin-right: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 // .main-header__logo {}
+.main-header__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin-right: 94px; //calc(100% - 64px - 174px - 436px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    margin-right: auto;
+  }
+}

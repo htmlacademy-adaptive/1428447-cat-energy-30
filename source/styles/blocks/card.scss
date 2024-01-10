@@ -1,56 +1,134 @@
 .card {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
   color: $black;
   background-color: $basic_grey;
 
   a {
     color: inherit;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 53px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 55px;
+    margin-bottom: 71px;
+  }
 }
 
 .card__header {
+  margin: 0 0 29px 70px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     font-size: 36px;
     line-height: 36px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-left: 214px;
+    margin-bottom: 73px;
+  }
+
   &::before {
+    position: absolute;
     content: "";
+    left: 20px;
     display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: $basic_green;
-  }
 
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   width: 50px;
-  //   height: 50px;
-  //   background-color: $black;
-  //   background-image: url("../../images/stack.svg#icon-cat-slim");
-  //   background-size: 50px 50px;
-  //   background-repeat: no-repeat;
-  //   z-index: 1;
-  // }
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 63px;
+      left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      right: auto;
+      left: 52px;
+    }
+  }
 }
 
 .card__cat {
   position: absolute;
+  width: 67px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 12px;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 211px;
+    top: 60px;
+    right: 29px;
+    left: auto;
+
+    &--slim {
+      height: 106px;
+      top: 110px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 97px;
+    top: 41px;
+    right: auto;
+    left: 36px;
+
+    &--slim {
+      height: 54px;
+      top: 67px;
+    }
+  }
 }
 
 .card__text {
+  position: relative;
+  padding-bottom: 38px;
   font-family: $font-add;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 48px;
+    width: 56%;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 15px;
+    background-color: $grey-4;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -77,7 +155,7 @@
     background-size: contain;
     width: 32px;
     height: 40px;
-    top: 0;
+    top: -8px;
     right: 0;
     transition: 0.3s ease-in-out;
   }
