@@ -1,12 +1,30 @@
-// .advertise-story {}
+.advertise-story {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "text text text"
+      "aspect aspect result";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: story;
+    max-width: 35%;
+    grid-template-areas:
+      "text"
+      "aspect"
+      "result";
+  }
+}
 
 .advertise-story__text {
+  margin: 0 0 20px;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    grid-area: text;
     font-size: 16px;
     line-height: 24px;
   }
@@ -18,19 +36,29 @@
 }
 
 .advertise-story__list {
+  grid-area: aspect;
+  max-width: 367px;
   padding: 0;
-  // margin: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 // .advertise-story__item {}
 
 .advertise-story__result {
+  margin: 0 0 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $black;
   font-size: 14px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    grid-area: result;
+    text-align: right;
+    margin-top: 11px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -47,6 +75,9 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 9px;
+    text-align: right;
     font-size: 20px;
     line-height: 20px;
   }

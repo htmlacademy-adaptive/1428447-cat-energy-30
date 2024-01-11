@@ -1,11 +1,26 @@
 .copyright {
+  padding-top: 20px;
+  padding-bottom: 40px;
   font-family: $font-add;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 168px;
+    border: none;
+  }
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: $special_dark-grey;
+
+  p {
+    margin: 0;
+  }
 }
 
 // .copyright__text {}

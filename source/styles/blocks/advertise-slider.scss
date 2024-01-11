@@ -1,5 +1,10 @@
 .advertise-slider {
+  grid-area: slider;
   margin: 1px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $grey-3;
+  }
 }
 // .advertise-slider__before {
 // }

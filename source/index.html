@@ -126,14 +126,16 @@
 
         <h2 class="special__header">Как это работает</h2>
         <ul class="special__list">
-          <li class="special-card">
+          <li class="special-card ">
             <div class="special-card__svg">
               <svg class="special-card__image special-card__image--leaf" aria-hidden="true" width="25" height="28"
                 focusable="false">
                 <use href="images/icons/stack.svg#icon-leaf"></use>
               </svg>
             </div>
-            Функциональное питание содержит только полезные питательные вещества.
+            <p class="special-card__text">
+              Функциональное питание содержит только полезные питательные вещества.
+            </p>
           </li>
           <li class="special-card">
             <div class="special-card__svg">
@@ -142,7 +144,9 @@
                 <use href="images/icons/stack.svg#icon-powder"></use>
               </svg>
             </div>
-            Выпускается в виде порошка, который нужно лишь залить кипятком и&nbsp; готово.
+            <p class="special-card__text">
+              Выпускается в виде порошка, который нужно лишь залить кипятком и&nbsp; готово.
+            </p>
           </li>
           <li class="special-card">
             <div class="special-card__svg">
@@ -151,7 +155,9 @@
                 <use href="images/icons/stack.svg#icon-eat"></use>
               </svg>
             </div>
-            Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
+            <p class="special-card__text">
+              Замените один-два приема обычной еды на&nbsp;наше функциональное питание.
+            </p>
           </li>
           <li class="special-card">
             <div class="special-card__svg">
@@ -160,20 +166,21 @@
                 <use href="images/icons/stack.svg#icon-clock"></use>
               </svg>
             </div>
-            Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!
+            <p class="special-card__text">
+              Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!
+            </p>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="advertise">
-      <div class="advertise__wrapper container">
-        <h2 class="advertise__header">Живой пример</h2>
-        <div class="advertise__item advertise-story">
+      <div class="advertise__wrapper">
+        <h2 class="advertise__header container">Живой пример</h2>
+        <div class="advertise__item advertise-story container">
           <p class="advertise-story__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на&nbsp;Cat&nbsp;Energy&nbsp;Slim. Отличный
-            результат без&nbsp;
-            изнуряющих тренировок! При этом он не&nbsp;менял своих привычек и&nbsp;по-прежнему спит
+            результат без&nbsp;изнуряющих тренировок! При этом он не&nbsp;менял своих привычек и&nbsp;по-прежнему спит
             по&nbsp;16&nbsp;часов в&nbsp;день.
           </p>
           <ul class="advertise-story__list">
@@ -191,18 +198,20 @@
         </div>
         <div class="advertise__item advertise-slider">
           <picture>
-            <!--
-            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/before-tablet@1x.webp 1x, images/before-tablet@2x.webp 2x">
-            <source width="280" height="256" type="image/webp" srcset="images/before-mobile@1x.webp 1x, images/before-mobile@2x.webp 2x"> -->
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+              srcset="images/before-tablet@1x.webp 1x, images/before-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp"
+              srcset="images/before-mobile@1x.webp 1x, images/before-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x">
             <img class="advertise-slider__before" src="images/before-mobile@1x.png"
               srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Жирный кот">
           </picture>
           <picture>
-            <!--
-            <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/after-tablet@1x.webp 1x, images/after-tablet@2x.webp 2x">
-            <source width="280" height="256" type="image/webp" srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x"> -->
+            <source width="560" height="512" type="image/webp" media="(min-width: 768px)"
+              srcset="images/after-tablet@1x.webp 1x, images/after-tablet@2x.webp 2x">
+            <source width="280" height="256" type="image/webp"
+              srcset="images/after-mobile@1x.webp 1x, images/after-mobile@2x.webp 2x">
             <source width="560" height="512" type="image/png" media="(min-width: 768px)"
               srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x">
             <img class="advertise-slider__after" src="images/after-mobile@1x.png" srcset="images/after-mobile@2x.png 2x"
@@ -217,12 +226,11 @@
         </div>
       </div>
     </section>
-
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
+    <div class="main-footer__wrapper">
       <div class="main-footer__wellcome contacts">
-        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
+        <p class="contacts__welcome">приглашаем <br>к&nbsp;сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
           <span class="contacts__spb">Санкт&#8209;Петербург</span>
         </address>
@@ -232,35 +240,37 @@
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
           allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
       </div>
-      <div class="main-footer__down">
+      <div class="main-footer__down container">
         <div class="logo-footer">
           <a class="logo-footer__link" href="#" aria-label="На главную">
             <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-        <ul class="socials">
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
-                <use href="images/icons/stack.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="youtube">
-              <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
-                <use href="images/icons/stack.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="телеграм">
-              <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
-                <use href="images/icons/stack.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="вконтакте">
+                <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
+                  <use href="images/icons/stack.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="youtube">
+                <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
+                  <use href="images/icons/stack.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="телеграм">
+                <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
+                  <use href="images/icons/stack.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>

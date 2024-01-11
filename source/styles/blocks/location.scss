@@ -1,5 +1,13 @@
 .location {
-  margin: 1px;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
-// .location__frame {}
+.location__frame {
+  width: 100%;
+  height: 100%;
+}

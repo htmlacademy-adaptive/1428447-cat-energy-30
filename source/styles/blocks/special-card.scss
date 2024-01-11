@@ -1,4 +1,5 @@
 .special-card {
+  position: relative;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -15,6 +16,22 @@
     gap: 31px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -40px;
+      left: 116px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic_grey;
+      // z-index: -1;
+    }
   }
 }
 
@@ -58,4 +75,8 @@
     width: 26px;
     height: 31px;
   }
+}
+
+.special-card__text {
+  z-index: 1;
 }
