@@ -30,6 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -43,6 +44,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 // .advertise-story__item {}
@@ -64,8 +69,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
+    margin-top: 0;
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -83,6 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: inline;
     font-size: 20px;
     line-height: 20px;
   }

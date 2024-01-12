@@ -3,13 +3,21 @@
   margin: 1px;
 
   @media (min-width: $tablet-width) {
-    background-color: $grey-3;
+    background: linear-gradient(0deg, $grey-3 70%, $white 70%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: none;
   }
 }
 // .advertise-slider__before {
 // }
 // .advertise-slider__after {
 // }
+
+.advertise-slider__compare {
+  width: 100%;
+}
 
 .advertise-slider__range {
   width: 57px;

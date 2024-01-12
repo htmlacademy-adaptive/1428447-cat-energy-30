@@ -6,12 +6,24 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
 .advertise__header {
   grid-area: header;
   margin: 0 0 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .advertise__wrapper {
@@ -20,7 +32,7 @@
     grid-template-areas:
       "header slider"
       "story  slider";
+    background: linear-gradient(0deg, $grey-3 80%, $white 80%);
   }
 }
 
-// .advertise__item {}
