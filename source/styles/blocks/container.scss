@@ -11,6 +11,19 @@
     margin-left: 110px;
     margin-right: 110px;
   }
+
+  &--padding {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &--product {
+    @media (max-width: $tablet-width - 1) {
+      margin: 0;
+    }
+  }
 }
 
 // .container--promo {}

@@ -1,29 +1,85 @@
 .pads {
-  ul {
-    padding: 0;
-    // margin: 0;
-  }
+  padding-top: 25px;
 
   li {
     list-style: none;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 70px;
+  }
 }
 
 .pads__header {
-  font-size: 24px;
-  line-height: 24px;
   display: inline;
   padding: 0 20px;
-  margin: 20px 0;
+  font-size: 24px;
+  line-height: 24px;
   color: $black;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
 }
 
-// .pads__list {}
+.pads__wrapper {
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.pads__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $special-grey;
+    border-right: 1px solid $special-grey;
+    border-bottom: 1px solid $special-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 2;
+    margin-right: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
 
 // .pads__item {}
+
+.pads__gift {
+  background-color: $basic_green;
+  color: $white;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    width: 245px;
+  }
+}
+
+// .gift__img {}
+
+.pads__gift-slogan {
+  font-family: $font-add;
+  font-size: 16px;
+  line-height: 20px;
+}

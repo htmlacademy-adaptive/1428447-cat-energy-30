@@ -1,12 +1,16 @@
 .main-header {
   margin-top: 13px;
-  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $grey-4;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    // margin-right: 34px;
+    margin-bottom: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,16 +1,38 @@
 .pads-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "unit  price"
+    "button button";
+  padding-top: 12px;
+  padding-bottom: 19px;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 14px;
   line-height: 20px;
+  border-top: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
+    grid-template-columns: 1fr 1fr 86px;
+    grid-template-areas:
+      "title unit  price"
+      "button button button";
+      padding: 26px 36px 28px 36px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 243px 81px 244px;
+    grid-template-areas: "title unit  price button";
+    padding: 15px 0;
   }
 }
 
 .pads-card__title {
+  grid-area: title;
+  margin: 0 0 13px;
   color: $special_dark-grey-2;
   text-transform: uppercase;
   font-family: $font-main;
@@ -18,13 +40,46 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+  }
 }
 
-// .pads-card__unit {}
+.pads-card__unit {
+  grid-area: unit;
+  margin: 0 0 15px;
 
-// .pads-card__price {}
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 
-// .pads-card__button {}
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+    text-align: left;
+  }
+}
+
+.pads-card__price {
+  grid-area: price;
+  margin: 0;
+  text-align: right;
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
+    text-align: left;
+  }
+}
+
+.pads-card__button {
+  grid-area: button;
+
+  @media (min-width: $desktop-width) {
+    grid-area: auto;
+    width: 244px;
+  }
+}

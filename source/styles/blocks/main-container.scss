@@ -1,13 +1,19 @@
 // .main-container {}
 
 .main-container__title {
+  margin-top: 27px;
+  margin-bottom: 0;
+  padding-bottom: 41px;
   color: $black;
   font-size: 36px;
   line-height: 36px;
+  border-bottom: 1px solid $grey-4;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 84px;
     font-size: 60px;
     line-height: 60px;
+    border: none;
   }
 }
 

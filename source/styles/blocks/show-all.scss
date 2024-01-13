@@ -1,31 +1,70 @@
-// .show-all {}
+.show-all {
+  @media (min-width: $tablet-width) {
+    margin-top: 31%;
+    border: 1px solid $grey-4;
+  }
 
-// .show-all__wrapper {}
+  @media (min-width: $desktop-width) {
+    margin-top: 40%;
+  }
+}
 
-// .show-all__card {}
+.show-all__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+  }
+
+}
+
+.show-all__card {
+  text-align: center;
+}
 
 .show-all__more {
+  margin-top: 78px;
+  margin-bottom: 8px;
   text-transform: uppercase;
   color: $black-1;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
   }
 }
 
 .show-all__sub {
+  margin-top: 0;
+  margin-bottom: 21px;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 12px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
     font-size: 16px;
     line-height: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
 }
 
-// .show-all__order {}
+.show-all__order {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+}
