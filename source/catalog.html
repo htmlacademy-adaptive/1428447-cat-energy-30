@@ -35,12 +35,12 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html" aria-current="page">
+            <a class="site-list__link site-list__link--active" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--active" href="catalog.html" aria-current="page">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
@@ -410,47 +410,51 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
-      <div class="main-footer__wellcome contacts">
-        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
-          <span class="contacts__spb">Санкт&#8209;Петербург</span>
-        </address>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__location">
+        <div class="main-footer__wellcome contacts">
+          <p class="contacts__welcome">приглашаем <br>к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
+            <span class="contacts__spb">Санкт&#8209;Петербург</span>
+          </address>
+        </div>
+        <div class="main-footer__map location">
+          <iframe class="location__frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
+            allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
+        </div>
       </div>
-      <div class="main-footer__map location">
-        <iframe class="location__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
-          allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
-      </div>
-      <div class="main-footer__down">
+      <div class="main-footer__down container">
         <div class="logo-footer">
           <a class="logo-footer__link" href="#" aria-label="На главную">
             <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-        <ul class="socials">
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
-                <use href="images/icons/stack.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="youtube">
-              <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
-                <use href="images/icons/stack.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="телеграм">
-              <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
-                <use href="images/icons/stack.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="вконтакте">
+                <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
+                  <use href="images/icons/stack.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="youtube">
+                <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
+                  <use href="images/icons/stack.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="телеграм">
+                <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
+                  <use href="images/icons/stack.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>

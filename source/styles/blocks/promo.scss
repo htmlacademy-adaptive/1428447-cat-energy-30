@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    z-index: -1;
     padding-bottom: 82px;
     min-height: 694px;
   }
@@ -34,10 +35,12 @@
     }
 
     @media (min-width: $desktop-width) {
+      position: absolute;
       display: block;
       background-image: url("../../images/index-background-desktop@1x.webp");
       width: 50%;
       height: 694px;
+      top: -131px;
       left: 50%;
       z-index: 1;
     }
@@ -59,10 +62,12 @@
     }
 
     @media (min-width: $desktop-width) {
+      position: absolute;
       display: block;
       width: 50%;
       height: 694px;
       left: 50%;
+      top: -131px;
       z-index: 2;
     }
   }
@@ -141,7 +146,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 352px;
+    height: 221px;
   }
 }
 
