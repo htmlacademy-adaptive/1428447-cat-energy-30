@@ -417,7 +417,21 @@
           </li>
         </ul>
         <div class="pads__gift container">
-          <svg class="pads__gift-img" aria-hidden="true" width="78" height="80" focusable="false">
+          <picture>
+            <source width="245" height="288" type="image/webp" media="(min-width: 1440px)"
+              srcset="images/image-desktop@1x.webp 1x, images/image-desktop@2x.webp 2x">
+            <source width="707" height="200" type="image/webp" media="(min-width: 768px)"
+              srcset="images/image-tablet@1x.webp 1x, images/image-tablet@2x.webp 2x">
+            <source width="280" height="290" type="image/webp"
+              srcset="images/image-mobile@1x.webp 1x, images/image-mobile@2x.webp 2x">
+            <source width="245" height="288" type="image/png" media="(min-width: 1440px)"
+              srcset="images/image-desktop@1x.png 1x, images/image-desktop@2x.png 2x">
+            <source width="707" height="200" type="image/png" media="(min-width: 768px)"
+              srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
+            <img class="pads__gift-img" src="images/image-mobile@1x.png" srcset="images/image-mobile@2x.png 2x"
+              width="280" height="290" alt="Стакан">
+          </picture>
+          <svg class="pads__gift-svg" aria-hidden="true" width="78" height="80" focusable="false">
             <use href="images/icons/stack.svg#icon-gift"></use>
           </svg>
           <p class="pads__gift-slogan">Закажите все <br>и получите чехол для кота в подарок!</p>
@@ -429,7 +443,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__location">
-        <div class="main-footer__wellcome contacts">
+        <div class="main-footer__wellcome contacts contacts--acsent">
           <p class="contacts__welcome">приглашаем <br>к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
             <span class="contacts__spb">Санкт&#8209;Петербург</span>

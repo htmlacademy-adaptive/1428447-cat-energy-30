@@ -1,15 +1,17 @@
 .show-all {
   @media (min-width: $tablet-width) {
-    margin-top: 31%;
+    margin-top: 103px;
     border: 1px solid $grey-4;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40%;
+    margin-top: 98px;
   }
 }
 
 .show-all__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -17,6 +19,36 @@
     height: 100%;
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 1px;
+    top: -38px;
+    left: calc(50% - 15px);
+    background-color: $grey-2;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      top: 80px;
+      left: calc(50% - 30px);
+    }
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 30px;
+    top: -53px;
+    left: 50%;
+    background-color: $grey-2;
+
+    @media (min-width: $tablet-width) {
+      height: 60px;
+      top: 50px;
+    }
+  }
 }
 
 .show-all__card {
