@@ -18,10 +18,10 @@
     grid-template-areas:
       "title unit  price"
       "button button button";
-      padding: 26px 36px 28px 36px;
-      font-size: 16px;
-      line-height: 20px;
-    }
+    padding: 26px 36px 28px 36px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 2fr 243px 81px 244px;

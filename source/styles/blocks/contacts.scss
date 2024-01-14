@@ -21,7 +21,9 @@
   }
 
   &--acsent {
-    background-color: $basic_grey;
+    @media (max-width: ($desktop-width - 1px)) {
+      background-color: $basic_grey;
+    }
   }
 }
 
