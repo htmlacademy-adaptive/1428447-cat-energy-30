@@ -1,5 +1,65 @@
 .container {
-  margin: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+
+    &--text {
+      margin-left: 70px;
+      margin-right: 70px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  &--padding {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  &--padding-form {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 70px;
+      margin-right: 70px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 110px;
+      padding-right: 110px;
+    }
+  }
+
+  &--catalog {
+    @media (max-width: ($tablet-width - 1)) {
+      margin: 0;
+    }
+  }
 }
 
 // .container--promo {}

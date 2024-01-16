@@ -1,11 +1,22 @@
 .aspect {
+  position: relative;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 162px;
+  }
 }
 
 .aspect__number {
+  margin: 0 0 34px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   color: $black;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  border: 1px solid $special_grey;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -14,10 +25,19 @@
 }
 
 .aspect__text {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 21px;
+  width: 81px;
+  height: 24px;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

@@ -1,20 +1,51 @@
 .special-card {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: start;
+    padding-right: 26px;
+    padding-bottom: 53px;
+    gap: 31px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: -40px;
+      left: 116px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic_grey;
+      // z-index: -1;
+    }
   }
 }
 
 .special-card__svg {
+  flex-shrink: 0;
   position: relative;
   width: 60px;
   height: 60px;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .special-card__image {
@@ -44,4 +75,8 @@
     width: 26px;
     height: 31px;
   }
+}
+
+.special-card__text {
+  z-index: 1;
 }

@@ -1,30 +1,99 @@
 .programs {
+  margin-bottom: 32px;
   color: $special_dark-grey;
   font-size: 16px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
   }
 }
 
 // .programs__form {}
 
-// .programs__about {}
+.programs__about {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-right: 110px;
+  }
+}
 
-// .programs__cat {}
+.programs__cat {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $grey-4;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    padding-bottom: 72px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-bottom: 70px;
+    width: 100%;
+  }
+}
 
 // .programs__line {}
 
 // .programs__owner {}
 
-// .programs__buttons {}
+.programs__buttons {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 65px;
+    padding: 23px 27px 27px 27px;
+    border: 1px solid $grey-6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 100%;
+    // margin-right: 110px;
+  }
+}
 
 // .programs__comments {}
 
 // .programs__append {}
 
-// .programs__button {}
+.programs__submit {
+  @media (min-width: $tablet-width) {
+    width: 284px;
+  }
+}
 
-// .programs__hint {}
+.programs__under {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.programs__hint {
+  margin: 20px 0;
+  font-family: $font-add;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+    text-align: left;
+  }
+}

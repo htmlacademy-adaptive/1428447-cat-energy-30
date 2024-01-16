@@ -1,11 +1,22 @@
 .socials {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $grey-4;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.socials__list {
   display: flex;
   justify-content: space-between;
-
-  ul {
-    padding: 0;
-    // margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+  width: 132px;
 
   li {
     list-style: none;

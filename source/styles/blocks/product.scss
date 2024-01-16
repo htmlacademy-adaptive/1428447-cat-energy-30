@@ -1,16 +1,48 @@
-// .product {}
+.product {
+  padding-top: 20px;
+  padding-bottom: 25px;
 
-// .product__wrapper {}
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
 
-// .product__img {}
+.product__wrapper {
+  display: grid;
+  grid-template-areas:
+    "image descr"
+    "button button";
+
+  @media (min-width: $tablet-width) {
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    grid-template-areas:
+      "image"
+      "descr"
+      "button";
+    grid-template-rows: 3fr 2fr 1fr;
+    background: linear-gradient(0deg, $basic-grey 80%, $white 80%);
+  }
+}
+
+.product__img {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // .product__picture {}
 
-// .product__card {
-
-// }
+.product__card {
+  grid-area: descr;
+  width: 100%;
+}
 
 .product__name {
+  margin: 0 0 14px 0;
+  width: 76px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
 
@@ -18,32 +50,71 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
     font-size: 20px;
     line-height: 24px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 24px;
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 
 .product__features {
+  width: 100%;
   color: $special_dark-grey;
   font-family: $font-add;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    border-collapse: collapse;
+
+    @media (min-width: $desktop-width) {
+      line-height: 22px;
+    }
+
+    td {
+      border-bottom: 1px solid $special_grey;
+    }
   }
 }
 
-// .product__feature {}
+.product__feature {
+  @media (min-width: $tablet-width) {
+    height: 30px;
+  }
+}
 
 // .product__feature-name {}
 
-// .product__feature-value {}
+.product__feature-value {
+  text-align: right;
+}
 
-// .product__order {}
+.product__order {
+  grid-area: button;
+  margin-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 37px;
+  }
+}

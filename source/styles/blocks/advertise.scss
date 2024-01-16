@@ -1,13 +1,37 @@
 .advertise {
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: $grey-3;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+  }
 }
 
-// .advertise__header {}
+.advertise__header {
+  grid-area: header;
+  margin: 0 0 40px;
+  font-weight: 400;
 
-// .advertise__wrapper {}
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 
-// .advertise__item {}
+  @media (min-width: $desktop-width) {
+    margin-bottom: 146px;
+  }
+}
+
+.advertise__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas:
+      "header slider"
+      "story  slider";
+    background: linear-gradient(0deg, $grey-3 80%, $white 80%);
+  }
+}

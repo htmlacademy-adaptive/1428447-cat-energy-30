@@ -13,24 +13,32 @@
 </head>
 
 <body class="page__body">
-
-  <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
-          srcset="images/logo-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-        <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle button-burger" type="button"><span class="visually-hidden">Открыть
+  <header class="main-header container container--padding">
+    <p style="display: none">
+      НЕ ЗАБЫТЬ li class="site-list__item site-list__item--active" активный пункт
+      a class="site-list__link" href="#" aria-current="page"
+    </p>
+    <div class="main-header__upper">
+      <a class="logo main-header__logo" href="#">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)"
+            srcset="images/logo-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)"
+            srcset="images/logo-tablet.svg">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+      </a>
+      <a class="logo main-header__text" href="#">
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy">
+      </a>
+      <button class="button-burger" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
+    </div>
+    <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="index.html">
+            <a class="site-list__link" href="index.html" aria-current="page">
               Главная
             </a>
           </li>
@@ -40,7 +48,7 @@
             </a>
           </li>
           <li class="site-list__item site-list__item--active">
-            <a class="site-list__link site-list__link--active" href="form.html" aria-current="page">
+            <a class="site-list__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -49,16 +57,18 @@
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__title">Подбор программы</h1>
-    <h2 class="main-container__subtitle">Заполните анкету, и мы подберем
-      программу питания для вашего кота</h2>
-
-    <section class="programs container">
+    <div class="container container--padding-form">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <h2 class="main-container__subtitle">Заполните анкету, и мы подберем <br>
+        программу питания для вашего кота</h2>
+    </div>
+    <section class="programs">
 
       <form class="programs__form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="visually-hidden">Краткая анкета</h3>
         <div class="programs__about">
-          <div class="programs__cat">
+
+          <div class="programs__cat container container--padding-form">
             <div class="programs__line label-input">
               <label for="cat-name">имя:*</label>
               <input id="cat-name" type="text" name="cat-name" value="Барсик" required>
@@ -73,35 +83,35 @@
             </div>
           </div>
 
-          <ul class="programs__buttons radio-buttons">
+          <ul class="programs__buttons radio-buttons container container--padding-form">
             <li class="radio-buttons__item">
-              <input class="radio-buttons__input visually-hidden" id="thinner" type="radio" name="program"
+              <input class="radio-buttons__input visually-hhiidden" id="thinner" type="radio" name="program"
                 value="thinner" checked>
               <label class="radio-buttons__label" for="thinner">похудение</label>
             </li>
             <li class="radio-buttons__item">
-              <input class="radio-buttons__input visually-hidden" id="fatter" type="radio" name="program"
+              <input class="radio-buttons__input visually-hhiidden" id="fatter" type="radio" name="program"
                 value="fatter">
               <label class="radio-buttons__label" for="fatter">Набор массы</label>
             </li>
             <li class="radio-buttons__item">
-              <input class="radio-buttons__input visually-hidden" id="advice" type="radio" name="program"
+              <input class="radio-buttons__input visually-hhiidden" id="advice" type="radio" name="program"
                 value="advice">
               <label class="radio-buttons__label" for="advice">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
         </div>
-        <div class="programs__owner owner ">
+        <div class="programs__owner owner">
           <div class="delimiter">
-            <h3 class="owner__header">Контактные данные (владельца кота)</h3>
+            <h3 class="owner__header">Контактные данные <br>(владельца кота)</h3>
           </div>
-          <div class="owner__wrapper">
-            <div class="owner__line owner__line--email">
+          <div class="owner__wrapper container container--padding-form">
+            <div class="owner__line owner__line--email label-input">
               <label for="owner-email">e-mail:*</label>
               <input class="owner__input" id="owner-email" type="email" name="owner__email" value="kuklachev@gmail.com"
                 required>
             </div>
-            <div class="owner__line owner__line--phone">
+            <div class="owner__line owner__line--phone label-input">
               <label for="owner-phone">телефон:*</label>
               <input class="owner__input" id="owner-phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
                 required>
@@ -113,7 +123,7 @@
           <div class="delimiter">
             <h3 class="comments__header">Комментарий:</h3>
           </div>
-          <textarea class="comments__text" id="comments" name="comments" rows="7"
+          <textarea class="comments__text container container--text" id="comments" name="comments" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
@@ -121,27 +131,27 @@
           <div class="delimiter">
             <h3 class="append__header">Дополнительно</h3>
           </div>
-          <ul class="append__list">
+          <ul class="append__list container">
             <li class="append__item">
-              <input class="append__input visually-hidden" id="false-sugar" type="checkbox" name="false-sugar" checked>
+              <input class="append__input visually-hhiidden" id="false-sugar" type="checkbox" name="false-sugar" checked>
               <label class="append__label" for="false-sugar">сахарозаменитель</label>
             </li>
             <li class="append__item">
-              <input class="append__input visually-hidden" id="water" type="checkbox" name="water">
+              <input class="append__input visually-hhiidden" id="water" type="checkbox" name="water">
               <label class="append__label" for="water">питьевая вода</label>
             </li>
             <li class="append__item">
-              <input class="append__input visually-hidden" id="milk" type="checkbox" name="milk">
+              <input class="append__input visually-hhiidden" id="milk" type="checkbox" name="milk">
               <label class="append__label" for="milk">молоко</label>
             </li>
             <li class="append__item">
-              <input class="append__input visually-hidden" id="vitamin" type="checkbox" name="vitamin">
+              <input class="append__input visually-hhiidden" id="vitamin" type="checkbox" name="vitamin">
               <label class="append__label" for="vitamin">витамины</label>
             </li>
           </ul>
         </div>
-        <div class="programs__button">
-          <button class="button button--submit" type="submit">отправить заявку</button>
+        <div class="programs__under container">
+          <button class="programs__submit button button--submit" type="submit">отправить заявку</button>
           <p class="programs__hint">* — Обязательные поля</p>
         </div>
       </form>
@@ -149,47 +159,51 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper container">
-      <div class="main-footer__wellcome contacts">
-        <p class="contacts__welcome">приглашаем <br>к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
-          <span class="contacts__spb">Санкт&#8209;Петербург</span>
-        </address>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__location">
+        <div class="main-footer__wellcome contacts contacts--acsent">
+          <p class="contacts__welcome">приглашаем <br>к&nbsp;сотрудничеству дилеров!</p>
+          <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
+            <span class="contacts__spb">Санкт&#8209;Петербург</span>
+          </address>
+        </div>
+        <div class="main-footer__map location">
+          <iframe class="location__frame"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
+            allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
+        </div>
       </div>
-      <div class="main-footer__map location">
-        <iframe class="location__frame"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989054779363!2d30.32128831609696!3d59.938797481876236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e354288bb%3A0xbbeecda9980bbc58!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE4LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1600172702829!5m2!1sru!2sru"
-          allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, дом 19/8, Санкт-Петербург"></iframe>
-      </div>
-      <div class="main-footer__down">
+      <div class="main-footer__down container">
         <div class="logo-footer">
           <a class="logo-footer__link" href="#" aria-label="На главную">
             <img class="logo-footer__text" src="images/logo-text.svg" width="128" height="24" alt="">
           </a>
         </div>
-        <ul class="socials">
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="вконтакте">
-              <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
-                <use href="images/icons/stack.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="youtube">
-              <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
-                <use href="images/icons/stack.svg#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item social-icon">
-            <a class="social-icon__link" href="#" aria-label="телеграм">
-              <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
-                <use href="images/icons/stack.svg#icon-telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="вконтакте">
+                <svg class="social-icon__img" aria-hidden="true" width="25" height="28" focusable="false">
+                  <use href="images/icons/stack.svg#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="youtube">
+                <svg class="social-icon__img" aria-hidden="true" width="23" height="16" focusable="false">
+                  <use href="images/icons/stack.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item social-icon">
+              <a class="social-icon__link" href="#" aria-label="телеграм">
+                <svg class="social-icon__img" aria-hidden="true" width="28" height="24" focusable="false">
+                  <use href="images/icons/stack.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <p class="copyright__text">HTML Academy</p>
