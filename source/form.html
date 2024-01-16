@@ -13,9 +13,9 @@
 </head>
 
 <body class="page__body">
-<!-- НЕ ЗАБЫТЬ -->
-<!-- <li class="site-list__item site-list__item--active"> активный пункт
-  <a class="site-list__link" href="№" aria-current="page"> -->
+  <!-- НЕ ЗАБЫТЬ -->
+  <!-- li class="site-list__item site-list__item--active" активный пункт
+  a class="site-list__link" href="№" aria-current="page" -->
   <header class="main-header container container--padding">
     <div class="main-header__upper">
       <a class="logo main-header__logo" href="#">
@@ -55,17 +55,19 @@
       </div>
     </nav>
   </header>
-  <main class="main-container container container--padding">
-    <h1 class="main-container__title">Подбор программы</h1>
-    <h2 class="main-container__subtitle">Заполните анкету, и мы подберем
-      программу питания для вашего кота</h2>
-
-    <section class="programs container">
+  <main class="main-container">
+    <div class="container container--padding-form">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <h2 class="main-container__subtitle">Заполните анкету, и мы подберем <br>
+        программу питания для вашего кота</h2>
+    </div>
+    <section class="programs">
 
       <form class="programs__form" action="https://echo.htmlacademy.ru" method="post">
         <h3 class="visually-hidden">Краткая анкета</h3>
         <div class="programs__about">
-          <div class="programs__cat">
+
+          <div class="programs__cat container container--padding-form">
             <div class="programs__line label-input">
               <label for="cat-name">имя:*</label>
               <input id="cat-name" type="text" name="cat-name" value="Барсик" required>
@@ -80,7 +82,7 @@
             </div>
           </div>
 
-          <ul class="programs__buttons radio-buttons">
+          <ul class="programs__buttons radio-buttons container container--padding-form">
             <li class="radio-buttons__item">
               <input class="radio-buttons__input visually-hidden" id="thinner" type="radio" name="program"
                 value="thinner" checked>
@@ -98,17 +100,17 @@
             </li>
           </ul>
         </div>
-        <div class="programs__owner owner ">
+        <div class="programs__owner owner">
           <div class="delimiter">
-            <h3 class="owner__header">Контактные данные (владельца кота)</h3>
+            <h3 class="owner__header">Контактные данные <br>(владельца кота)</h3>
           </div>
-          <div class="owner__wrapper">
-            <div class="owner__line owner__line--email">
+          <div class="owner__wrapper container container--padding-form">
+            <div class="owner__line owner__line--email label-input">
               <label for="owner-email">e-mail:*</label>
               <input class="owner__input" id="owner-email" type="email" name="owner__email" value="kuklachev@gmail.com"
                 required>
             </div>
-            <div class="owner__line owner__line--phone">
+            <div class="owner__line owner__line--phone label-input">
               <label for="owner-phone">телефон:*</label>
               <input class="owner__input" id="owner-phone" type="tel" name="owner__phone" value="8 (960) 900-60-90"
                 required>
@@ -120,7 +122,7 @@
           <div class="delimiter">
             <h3 class="comments__header">Комментарий:</h3>
           </div>
-          <textarea class="comments__text" id="comments" name="comments" rows="7"
+          <textarea class="comments__text container container--text" id="comments" name="comments" rows="7"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
 
@@ -128,7 +130,7 @@
           <div class="delimiter">
             <h3 class="append__header">Дополнительно</h3>
           </div>
-          <ul class="append__list">
+          <ul class="append__list container">
             <li class="append__item">
               <input class="append__input visually-hidden" id="false-sugar" type="checkbox" name="false-sugar" checked>
               <label class="append__label" for="false-sugar">сахарозаменитель</label>
@@ -147,8 +149,8 @@
             </li>
           </ul>
         </div>
-        <div class="programs__button">
-          <button class="button button--submit" type="submit">отправить заявку</button>
+        <div class="programs__under container">
+          <button class="programs__submit button button--submit" type="submit">отправить заявку</button>
           <p class="programs__hint">* — Обязательные поля</p>
         </div>
       </form>
@@ -158,7 +160,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__location">
-        <div class="main-footer__wellcome contacts">
+        <div class="main-footer__wellcome contacts contacts--acsent">
           <p class="contacts__welcome">приглашаем <br>к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая <br>Конюшенная, д. 19/8
             <span class="contacts__spb">Санкт&#8209;Петербург</span>

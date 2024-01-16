@@ -1,26 +1,63 @@
 .owner {
-  margin: 20px 0;
-}
+  position: relative;
+  margin: 20px 0 0;
 
-.owner__header {
-  display: inline;
-  padding: 0 20px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  line-height: 26px;
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
-// .owner__wrapper {}
+.owner__header {
+  position: absolute;
+  top: 5px;
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    margin-left: 30px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+  }
+}
+
+.owner__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 73px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 81px;
+    padding-bottom: 70px;
+  }
+}
 
 .owner__line {
   position: relative;
-  width: 250px;
+  width: 100%;
 
   &::before {
     content: "";
@@ -31,8 +68,8 @@
     background-size: contain;
     width: var(--width);
     height: var(--height);
-    top: 0;
-    right: 0;
+    top: 16px;
+    right: 14px;
     transition: 0.3s ease-in-out;
   }
 
