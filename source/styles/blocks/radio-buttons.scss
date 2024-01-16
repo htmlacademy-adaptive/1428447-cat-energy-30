@@ -1,9 +1,10 @@
 .radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
   padding-bottom: 19px;
-  border-bottom: 1px solid $grey-4;
-
-  // margin: 0;
   text-transform: uppercase;
+  border-bottom: 1px solid $grey-4;
 
   li {
     list-style: none;

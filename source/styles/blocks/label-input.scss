@@ -11,11 +11,17 @@
 
   input {
     margin-left: 13px;
+    padding-left: 15px;
     flex-grow: 1;
     min-width: 20px;
     height: 45px;
     font-size: 18px;
+    text-transform: uppercase;
     border: 1px solid $grey-6;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 20px;
+    }
   }
 }
 

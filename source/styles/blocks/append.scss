@@ -21,12 +21,13 @@
 }
 
 .append__list {
+  display: grid;
+  gap: 13px;
   padding: 0;
   margin: 34px 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     margin-top: 57px;
@@ -34,7 +35,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 57px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 60px;
   }
 }
 
